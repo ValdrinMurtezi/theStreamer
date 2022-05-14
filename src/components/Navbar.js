@@ -15,16 +15,16 @@ function Navbar() {
       </h1>
       <ul className={open ? "links-open" : "links"}>
         <li>
-          <a href="#">Action</a>
+          <a href="#header-body">Action</a>
         </li>
         <li>
-          <a href="#">Adventure</a>
+          <a href="#header-body">Adventure</a>
         </li>
         <li>
-          <a href="#">Horror</a>
+          <a href="#header-body">Horror</a>
         </li>
         <li>
-          <a href="#">Comedy</a>
+          <a href="#header-body">Comedy</a>
         </li>
         <div className={open ? "subscribe-btn-open" : "subscribe-btn"}>
           <button>Subscribe</button>
