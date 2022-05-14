@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import headerData from "./Data";
-import "../styles/Header.scss";
+
 import "../styles/newcss.scss";
 
 function HeaderBody() {

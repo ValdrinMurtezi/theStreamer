@@ -1,11 +1,13 @@
 import "./App.scss";
-import Header from "./components/Header";
 import Movies from "./components/Movies";
+import Navbar from "./components/Navbar";
+import HeaderBody from "./components/HeaderBody";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
+      <HeaderBody />
       <Movies />
     </div>
   );
