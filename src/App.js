@@ -1,13 +1,13 @@
 import "./App.scss";
 import Movies from "./components/Movies";
 import Navbar from "./components/Navbar";
-import HeaderBody from "./components/HeaderBody";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <HeaderBody />
+      <Header />
       <Movies />
     </div>
   );

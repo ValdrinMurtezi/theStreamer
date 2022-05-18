@@ -1,0 +1,178 @@
+section {
+  padding-top: 7rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.89);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .crs-1,
+section .crs-2 {
+  width: 100%;
+}
+
+section .crs-1 h1,
+section .crs-2 h1 {
+  color: #b6b6b6;
+  margin-left: 5rem;
+  font-size: 30px;
+}
+
+section::after {
+  content: "";
+  background: url(../space.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+section .eLPooy {
+  width: 95%;
+  height: 15rem !important;
+  margin: 2rem;
+  color: #fc4848;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 3rem 0;
+}
+
+section .eLPooy:hover .eWjCzc {
+  opacity: 1;
+  line-height: 0;
+  color: white;
+  border: none !important;
+  background-color: transparent;
+  font-size: 45px;
+  z-index: 2;
+}
+
+section .kdCslO {
+  display: none;
+}
+
+section .hHJTFD {
+  margin: 0 -25px !important;
+}
+
+section .grUxXV {
+  width: 1330px;
+}
+
+section .eWjCzc {
+  opacity: 0;
+}
+
+section .rec-arrow-left {
+  border: none;
+}
+
+section button {
+  border: none;
+}
+
+section .eWjCzc:hover:enabled,
+section .eWjCzc:focus:enabled {
+  background-color: transparent;
+  border: none !important;
+  -webkit-appearance: inherit;
+}
+
+section .eAyARa:disabled {
+  cursor: auto;
+  line-height: 0;
+  color: white;
+  border: none !important;
+  background-color: transparent;
+  font-size: 45px;
+  opacity: 0;
+}
+
+section .movie {
+  width: 14rem;
+  position: relative;
+  margin: 0 1rem;
+}
+
+section .movie img {
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  height: 13rem;
+}
+
+@media screen and (max-width: 830px) {
+  .grUxXV {
+    width: 100% !important;
+    height: 305px;
+    margin-bottom: -3rem;
+  }
+  .guIbWC {
+    width: 219px !important;
+  }
+  .eLPooy {
+    width: 100%;
+  }
+  section {
+    padding-top: 3rem;
+  }
+  section .crs-1 h1,
+  section .crs-2 h1 {
+    margin-left: 4rem;
+  }
+  section .movie {
+    width: 13rem !important;
+    height: 12rem !important;
+  }
+  section .movie img {
+    width: 100% !important;
+    height: 12rem !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  section {
+    padding-top: 2rem;
+  }
+  section .crs-1 h1,
+  section .crs-2 h1 {
+    margin-left: 1rem;
+    margin-top: 0;
+    font-size: 25px;
+  }
+  section .eLPooy {
+    margin: 0;
+    height: 12rem !important;
+  }
+  section .hHJTFD {
+    margin: 0 -50px !important;
+  }
+  section .guIbWC {
+    width: 160px !important;
+  }
+  section .movie {
+    height: 9rem !important;
+    margin: 0 0.5rem;
+  }
+  section .movie img {
+    height: 9rem !important;
+  }
+}
+/*# sourceMappingURL=movies.css.map */

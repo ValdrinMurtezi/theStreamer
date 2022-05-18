@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import "../styles/newcss.scss";
+import "../styles/Header.scss";
 
-function HeaderBody() {
+function Header() {
   const [currentSlide, setCurrentSlide] = useState(2);
   const APP_KEY = "c033d3977348ab9f9b8bbcc11094cdb0";
   const API_URL = "https://api.themoviedb.org/3";
@@ -30,7 +30,7 @@ function HeaderBody() {
   let setSlide;
 
   const auto = () => {
-    setSlide = setInterval(nextSlide, 10000);
+    setSlide = setInterval(nextSlide, 50000);
   };
 
   useEffect(() => {
@@ -79,4 +79,4 @@ function HeaderBody() {
   );
 }
 
-export default HeaderBody;
+export default Header;
