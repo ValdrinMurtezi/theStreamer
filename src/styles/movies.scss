@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 section {
   padding-top: 5rem;
   width: 100%;
@@ -17,9 +18,11 @@ section {
     height: 21rem;
 
     h1 {
-      color: rgb(182, 182, 182);
-      margin: 0.5rem 0 0 5rem;
-      font-size: 30px;
+      color: rgb(240, 240, 240);
+      margin: 1rem 0 -0.8rem 5rem;
+      font-size: 27px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
     }
   }
 
@@ -97,6 +100,14 @@ section {
     position: relative;
     margin: 0 1rem;
 
+    h4 {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400 !important;
+      text-align: center;
+      margin-top: -0.1rem;
+    }
+
     img {
       max-width: 100%;
       width: 100%;
@@ -140,12 +151,13 @@ section {
     .crs-1,
     .crs-2 {
       h1 {
-        margin-left: 4rem;
+        margin-left: 2.5rem;
+        padding-bottom: 1rem;
       }
     }
 
     .movie {
-      width: 13rem !important;
+      width: 14rem !important;
       height: 12rem !important;
 
       img {
@@ -172,10 +184,6 @@ section {
       display: none !important;
     }
 
-    button {
-      display: none;
-    }
-
     .kdCslO {
       display: none !important;
     }
@@ -186,7 +194,7 @@ section {
       h1 {
         margin-left: 1rem;
         margin-top: 0;
-        font-size: 25px;
+        font-size: 22px;
       }
     }
 

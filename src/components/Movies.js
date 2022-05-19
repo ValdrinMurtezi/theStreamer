@@ -30,7 +30,7 @@ function Movies() {
   return (
     <section>
       <div className="crs-1">
-        <h1>Action</h1>
+        <h1>New </h1>
         <Carosuel breakPoints={breakPoints}>
           {movies.map((movie, index) => (
             <div className="movie" key={index}>
@@ -38,6 +38,7 @@ function Movies() {
                 src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`}
                 alt="poster"
               />
+              <h4>{movie.title}</h4>
             </div>
           ))}
         </Carosuel>
@@ -52,6 +53,7 @@ function Movies() {
                 src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`}
                 alt="poster"
               />
+              <h4>{movie.title}</h4>
             </div>
           ))}
         </Carosuel>
