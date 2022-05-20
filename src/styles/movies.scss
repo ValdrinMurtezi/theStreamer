@@ -45,7 +45,7 @@ section {
     display: flex;
     padding: 0 0 3rem 0;
   }
-  .eLPooy:hover .eWjCzc {
+  .eLPooy:hover .hJJzxj {
     opacity: 1;
     line-height: 0;
     color: white;
@@ -54,8 +54,9 @@ section {
     font-size: 45px;
     z-index: 2;
   }
-  .kdCslO {
-    display: none;
+
+  .rec-pagination {
+    display: none !important;
   }
 
   .hHJTFD {
@@ -67,14 +68,36 @@ section {
     width: 1330px;
   }
 
+  .hJKYRZ:disabled {
+    cursor: auto;
+  }
+
   // button
-  .eWjCzc {
+  .hJJzxj {
     opacity: 0;
   }
 
-  .rec-arrow-left {
+  .hJJzxj {
+    opacity: 1;
+    line-height: 0 !important;
+    color: white !important;
+    border: none !important;
+    background-color: transparent !important;
+    font-size: 45px !important;
+    z-index: 3 !important;
+  }
+
+  button {
+    z-index: 2;
+    background-color: transparent !important;
+    border: none;
+  }
+
+  .rec-arrow {
+    margin-bottom: 4rem;
     border: none !important;
   }
+
   button {
     border: none !important;
   }
@@ -83,16 +106,6 @@ section {
     background-color: transparent !important;
     border: none !important;
     -webkit-appearance: inherit;
-  }
-
-  .eAyARa:disabled {
-    cursor: auto;
-    line-height: 0;
-    color: white;
-    border: none !important;
-    background-color: transparent;
-    font-size: 45px;
-    opacity: 0;
   }
 
   .movie {
@@ -189,6 +202,10 @@ section {
     }
 
     .kdCslO {
+      display: none !important;
+    }
+
+    .hJJzxj {
       display: none !important;
     }
 

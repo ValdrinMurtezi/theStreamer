@@ -58,7 +58,7 @@ section .eLPooy {
   padding: 0 0 3rem 0;
 }
 
-section .eLPooy:hover .eWjCzc {
+section .eLPooy:hover .hJJzxj {
   opacity: 1;
   line-height: 0;
   color: white;
@@ -68,8 +68,8 @@ section .eLPooy:hover .eWjCzc {
   z-index: 2;
 }
 
-section .kdCslO {
-  display: none;
+section .rec-pagination {
+  display: none !important;
 }
 
 section .hHJTFD {
@@ -80,11 +80,32 @@ section .grUxXV {
   width: 1330px;
 }
 
-section .eWjCzc {
+section .hJKYRZ:disabled {
+  cursor: auto;
+}
+
+section .hJJzxj {
   opacity: 0;
 }
 
-section .rec-arrow-left {
+section .hJJzxj {
+  opacity: 1;
+  line-height: 0 !important;
+  color: white !important;
+  border: none !important;
+  background-color: transparent !important;
+  font-size: 45px !important;
+  z-index: 3 !important;
+}
+
+section button {
+  z-index: 2;
+  background-color: transparent !important;
+  border: none;
+}
+
+section .rec-arrow {
+  margin-bottom: 4rem;
   border: none !important;
 }
 
@@ -97,16 +118,6 @@ section .eWjCzc:focus:enabled {
   background-color: transparent !important;
   border: none !important;
   -webkit-appearance: inherit;
-}
-
-section .eAyARa:disabled {
-  cursor: auto;
-  line-height: 0;
-  color: white;
-  border: none !important;
-  background-color: transparent;
-  font-size: 45px;
-  opacity: 0;
 }
 
 section .movie {
@@ -187,6 +198,9 @@ section .movie img {
     display: none !important;
   }
   section .kdCslO {
+    display: none !important;
+  }
+  section .hJJzxj {
     display: none !important;
   }
   section .crs-1,
