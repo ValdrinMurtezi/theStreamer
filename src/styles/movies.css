@@ -163,8 +163,10 @@ section .movie img {
   section .hHJTFD {
     margin: 0 !important;
   }
+  section .hJJzxj,
+  section .hJKYRZ,
   section .eAyARa {
-    display: none;
+    display: none !important;
   }
   section .eWjCzc {
     display: none !important;
