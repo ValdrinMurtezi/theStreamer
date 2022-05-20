@@ -32,7 +32,7 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55%;
+  width: 58%;
   list-style: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -80,7 +80,7 @@ nav .subscribe-btn button {
   border-radius: 4px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-left: 4rem;
+  margin-left: 6rem;
 }
 
 nav .subscribe-btn button:hover {

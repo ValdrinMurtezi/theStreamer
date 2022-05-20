@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 section {
-  padding-top: 7rem;
+  padding-top: 5rem;
   width: 100%;
   height: 100%;
   position: relative;
@@ -23,13 +24,16 @@ section {
 section .crs-1,
 section .crs-2 {
   width: 100%;
+  height: 21rem;
 }
 
 section .crs-1 h1,
 section .crs-2 h1 {
-  color: #b6b6b6;
-  margin-left: 5rem;
-  font-size: 30px;
+  color: #f0f0f0;
+  margin: 1rem 0 -0.8rem 5rem;
+  font-size: 27px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 section::after {
@@ -81,16 +85,16 @@ section .eWjCzc {
 }
 
 section .rec-arrow-left {
-  border: none;
+  border: none !important;
 }
 
 section button {
-  border: none;
+  border: none !important;
 }
 
 section .eWjCzc:hover:enabled,
 section .eWjCzc:focus:enabled {
-  background-color: transparent;
+  background-color: transparent !important;
   border: none !important;
   -webkit-appearance: inherit;
 }
@@ -111,11 +115,19 @@ section .movie {
   margin: 0 1rem;
 }
 
+section .movie h4 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400 !important;
+  text-align: center;
+  margin-top: -0.1rem;
+}
+
 section .movie img {
   max-width: 100%;
   width: 100%;
   cursor: pointer;
-  height: 13rem;
+  height: 11rem;
 }
 
 @media screen and (max-width: 830px) {
@@ -129,17 +141,28 @@ section .movie img {
   }
   .eLPooy {
     width: 100%;
+    margin: 0 !important;
   }
   section {
-    padding-top: 3rem;
+    padding-top: 1rem;
+  }
+  section .hHJTFD {
+    margin: 0 !important;
+  }
+  section .eAyARa {
+    display: none;
+  }
+  section .eWjCzc {
+    display: none !important;
   }
   section .crs-1 h1,
   section .crs-2 h1 {
-    margin-left: 4rem;
+    margin-left: 2.5rem;
+    padding-bottom: 1rem;
   }
   section .movie {
-    width: 13rem !important;
-    height: 12rem !important;
+    width: 14rem !important;
+    height: 15rem !important;
   }
   section .movie img {
     width: 100% !important;
@@ -151,28 +174,54 @@ section .movie img {
   section {
     padding-top: 2rem;
   }
+  section .grUxXV {
+    height: 8rem;
+  }
+  section .eAyARa {
+    display: none !important;
+  }
+  section .eAyARa button {
+    display: none !important;
+  }
+  section .eWjCzc {
+    display: none !important;
+  }
+  section .kdCslO {
+    display: none !important;
+  }
+  section .crs-1,
+  section .crs-2 {
+    height: 13rem;
+  }
   section .crs-1 h1,
   section .crs-2 h1 {
     margin-left: 1rem;
     margin-top: 0;
-    font-size: 25px;
+    font-size: 22px;
   }
   section .eLPooy {
     margin: 0;
     height: 12rem !important;
+    padding: 0;
+  }
+  section .eLPooy button {
+    display: none !important;
+  }
+  section .eLPooy .rec.rec-arrow {
+    display: none !important;
   }
   section .hHJTFD {
-    margin: 0 -50px !important;
+    margin: 0 !important;
+    height: 12rem;
   }
   section .guIbWC {
     width: 160px !important;
   }
   section .movie {
-    height: 9rem !important;
     margin: 0 0.5rem;
   }
   section .movie img {
-    height: 9rem !important;
+    height: 8rem !important;
   }
 }
 /*# sourceMappingURL=movies.css.map */

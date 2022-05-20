@@ -158,7 +158,7 @@ section {
 
     .movie {
       width: 14rem !important;
-      height: 12rem !important;
+      height: 15rem !important;
 
       img {
         width: 100% !important;
@@ -177,7 +177,11 @@ section {
     }
 
     .eAyARa {
-      display: none;
+      display: none !important;
+
+      button {
+        display: none !important;
+      }
     }
 
     .eWjCzc {
@@ -213,6 +217,7 @@ section {
 
     .hHJTFD {
       margin: 0 !important;
+      height: 12rem;
     }
 
     .guIbWC {
@@ -220,7 +225,7 @@ section {
     }
 
     .movie {
-      height: 9rem !important;
+      // height: 9rem !important;
       margin: 0 0.5rem;
 
       img {
