@@ -150,6 +150,9 @@ section .movie img {
   .guIbWC {
     width: 219px !important;
   }
+  .rec-carosuel button {
+    display: none;
+  }
   .eLPooy {
     width: 100%;
     margin: 0 !important;
@@ -188,18 +191,6 @@ section .movie img {
   section .grUxXV {
     height: 8rem;
   }
-  section .eAyARa {
-    display: none !important;
-  }
-  section .eAyARa button {
-    display: none !important;
-  }
-  section .eWjCzc {
-    display: none !important;
-  }
-  section .kdCslO {
-    display: none !important;
-  }
   section .hJJzxj {
     display: none !important;
   }
@@ -222,9 +213,6 @@ section .movie img {
     padding: 0;
   }
   section .eLPooy button {
-    display: none !important;
-  }
-  section .eLPooy .rec.rec-arrow {
     display: none !important;
   }
   section .hHJTFD {
