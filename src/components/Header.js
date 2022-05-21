@@ -42,40 +42,42 @@ function Header() {
   }, [currentSlide]);
 
   return (
-    <div className="header-body">
-      {movies.map((item, index) => {
-        return (
-          <div
-            className={index === currentSlide ? "item current " : "item"}
-            key={index}
-          >
-            {index === currentSlide && (
-              <div className="movie">
-                <img
-                  src={`https://image.tmdb.org/t/p/w400${item.poster_path}`}
-                  alt="imgg"
-                />
-                <div className="info">
-                  <h1>{item.title.slice(0, 33)}</h1>
+    <>
+      <div className="header-body">
+        {movies.map((item, index) => {
+          return (
+            <div
+              className={index === currentSlide ? "item current " : "item"}
+              key={index}
+            >
+              {index === currentSlide && (
+                <div className="movie">
+                  <img
+                    src={`https://image.tmdb.org/t/p/w400${item.poster_path}`}
+                    alt="imgg"
+                  />
+                  <div className="info">
+                    <h1>{item.title.slice(0, 33)}</h1>
 
-                  <p>{item.overview.slice(0, 300)}</p>
-                  <div className="rating">
-                    <span>{item.release_date}</span>
-                    <span className="number">
-                      {item.vote_average}
-                      <i className="fa-solid fa-star"></i>
-                    </span>
+                    <p>{item.overview.slice(0, 300)}</p>
+                    <div className="rating">
+                      <span>{item.release_date}</span>
+                      <span className="number">
+                        {item.vote_average}
+                        <i className="fa-solid fa-star"></i>
+                      </span>
+                    </div>
+                    <button onClick={nextSlide}>
+                      <i className="fa-solid fa-play"></i> Watch Now
+                    </button>
                   </div>
-                  <button onClick={nextSlide}>
-                    <i className="fa-solid fa-play"></i> Watch Now
-                  </button>
                 </div>
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 

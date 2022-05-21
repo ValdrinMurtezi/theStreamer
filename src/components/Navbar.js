@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Navbar.scss";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,11 +12,13 @@ function Navbar() {
   return (
     <nav>
       <h1>
-        the <span>streamer</span>
+        <Link to={"/"}>
+          the <span>streamer</span>{" "}
+        </Link>
       </h1>
       <ul className={open ? "links-open" : "links"}>
         <li>
-          <a href="#header-body">Action</a>
+          <Link to={"/action"}>Action</Link>
         </li>
         <li>
           <a href="#header-body">Adventure</a>
