@@ -122,16 +122,18 @@
 }
 
 @media screen and(max-width: 830px) {
-  .movie {
-    flex-direction: column;
-    width: 100% !important;
+  .header-body {
+    .movie {
+      flex-direction: column;
+      width: 100% !important;
 
-    img {
-      width: 70% !important;
-      height: 25rem !important;
-    }
-    .info {
-      width: 70% !important;
+      img {
+        width: 70% !important;
+        height: 25rem !important;
+      }
+      .info {
+        width: 70% !important;
+      }
     }
   }
 }
@@ -162,7 +164,7 @@
       }
       button {
         font-size: 18px;
-        padding: 0.4rem 0.5rem !important;
+        padding: 0.6rem 0.5rem !important;
         width: 9rem;
       }
     }

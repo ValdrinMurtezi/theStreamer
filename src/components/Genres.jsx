@@ -1,6 +1,6 @@
 import React from "react";
 import Action from "./Genres/Action";
-import Comedy from "./Genres/Comedy";
+import Adventure from "./Genres/Adventure";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainSection from "./MainSection";
 
@@ -11,7 +11,7 @@ function Genres() {
         <Routes>
           <Route path="/" element={<MainSection />} />
           <Route path="/action" element={<Action />} />
-          <Route path="/comedy" element={<Comedy />} />
+          <Route path="/adventure" element={<Adventure />} />
         </Routes>
       </Router>
     </div>

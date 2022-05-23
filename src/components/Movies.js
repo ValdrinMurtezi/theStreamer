@@ -14,17 +14,28 @@ function Movies() {
   const API_URL = "https://api.themoviedb.org/3";
 
   const [movies, setMovies] = useState([]);
+  const [newMovies, setNewMovies] = useState([]);
+
+  const getMovies = async () => {
+    const response = await fetch(
+      `${API_URL}/discover/movie?sort_by=popularity.desc&primary_release_date.gte=2021-01-01&primary_release_date.lte=2022-01-31&api_key=${APP_KEY}`
+    );
+    const data = await response.json();
+    setMovies(data.results);
+  };
+
+  const popularMovies = async () => {
+    const response = await fetch(
+      `${API_URL}/discover/movie?sort_by=popularity.desc&vote_average.gte=10&api_key=${APP_KEY}`
+    );
+    const data = await response.json();
+    setNewMovies(data.results);
+    console.log(data.results);
+  };
 
   useEffect(() => {
-    const getMovies = async () => {
-      const response = await fetch(
-        `${API_URL}/discover/movie?sort_by=popularity.desc&api_key=${APP_KEY}`
-      );
-      const data = await response.json();
-      setMovies(data.results);
-      console.log(data.results);
-    };
     getMovies();
+    popularMovies();
   }, []);
 
   return (
@@ -47,7 +58,7 @@ function Movies() {
       <div className="crs-2">
         <h1>Popular now</h1>
         <Carosuel breakPoints={breakPoints}>
-          {movies.map((movie, index) => (
+          {newMovies.map((movie, index) => (
             <div className="movie" key={index}>
               <img
                 src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`}

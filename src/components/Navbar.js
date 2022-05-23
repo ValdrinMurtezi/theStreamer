@@ -21,7 +21,7 @@ function Navbar() {
           <Link to={"/action"}>Action</Link>
         </li>
         <li>
-          <a href="#header-body">Adventure</a>
+          <Link to={"/adventure"}>Adventure</Link>
         </li>
         <li>
           <a href="#header-body">Horror</a>
