@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+section {
+  padding: 5rem 0 4rem 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.89);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .crs-1,
+section .crs-2 {
+  width: 100%;
+  height: 21rem;
+}
+
+section .crs-1 h1,
+section .crs-2 h1 {
+  color: #f0f0f0;
+  margin: 1rem 0 0rem 5rem;
+  font-size: 27px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+section::after {
+  content: "";
+  background: url(../space.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+section .eLPooy {
+  width: 95%;
+  height: 15rem !important;
+  margin: 2rem;
+  color: #fc4848;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 3rem 0;
+}
+
+section .eLPooy:hover .hJJzxj {
+  opacity: 1;
+  line-height: 0;
+  color: white;
+  border: none !important;
+  background-color: transparent;
+  font-size: 45px;
+  z-index: 2;
+}
+
+section .rec-pagination {
+  display: none !important;
+}
+
+section .hHJTFD {
+  margin: 0 -25px !important;
+}
+
+section .grUxXV {
+  width: 1330px;
+}
+
+section .eAyARa:disabled {
+  cursor: auto;
+}
+
+section .hJKYRZ:disabled {
+  cursor: auto !important;
+}
+
+section .hJJzxj {
+  opacity: 1;
+  line-height: 0 !important;
+  color: white !important;
+  border: none !important;
+  background-color: transparent !important;
+  font-size: 45px !important;
+  z-index: 3 !important;
+}
+
+section button {
+  z-index: 2;
+  background-color: transparent !important;
+  border: none;
+}
+
+section .rec-arrow {
+  margin-bottom: 4rem;
+  border: none !important;
+}
+
+section .movie {
+  width: 14rem;
+  position: relative;
+  margin: 0 1rem;
+}
+
+section .movie h4 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400 !important;
+  text-align: center;
+  margin-top: -0.1rem;
+}
+
+section .movie img {
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  height: 11rem;
+}
+
+@media screen and (max-width: 850px) {
+  .grUxXV {
+    width: 100% !important;
+    height: 305px;
+    margin-bottom: -3rem;
+  }
+  .guIbWC {
+    width: 219px !important;
+  }
+  .rec-carosuel button {
+    display: none;
+  }
+  .eLPooy {
+    width: 100%;
+    margin: 0 !important;
+  }
+  section {
+    padding-top: 1rem;
+  }
+  section .hHJTFD {
+    margin: 0 !important;
+  }
+  section .hJJzxj,
+  section .hJKYRZ,
+  section .eAyARa {
+    display: none !important;
+  }
+  section .eWjCzc {
+    display: none !important;
+  }
+  section .crs-1 h1,
+  section .crs-2 h1 {
+    margin-left: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  section .movie {
+    width: 14rem !important;
+    height: 15rem !important;
+  }
+  section .movie img {
+    width: 100% !important;
+    height: 12rem !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  section {
+    padding-top: 2rem;
+    border-top: solid 0.5px rgba(255, 255, 255, 0.534);
+  }
+  section .grUxXV {
+    height: 8rem;
+  }
+  section .hJJzxj {
+    display: none !important;
+  }
+  section .hJKYRZ {
+    display: none;
+  }
+  section .crs-1,
+  section .crs-2 {
+    height: 15rem;
+  }
+  section .crs-1 h1,
+  section .crs-2 h1 {
+    margin-left: 1rem;
+    margin-top: 0;
+    font-size: 22px;
+  }
+  section .eLPooy {
+    margin: 0;
+    height: 12rem !important;
+    padding: 0;
+  }
+  section .eLPooy button {
+    display: none !important;
+  }
+  section .hHJTFD {
+    margin: 0 !important;
+    height: 12rem;
+  }
+  section .guIbWC {
+    width: 160px !important;
+  }
+  section .movie {
+    margin: 0 0.5rem;
+  }
+  section .movie img {
+    height: 8rem !important;
+  }
+}
+/*# sourceMappingURL=movies.css.map */
