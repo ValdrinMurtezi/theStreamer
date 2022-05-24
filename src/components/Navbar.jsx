@@ -24,13 +24,14 @@ function Navbar() {
           <Link to={"/adventure"}>Adventure</Link>
         </li>
         <li>
-          <a href="#header-body">Horror</a>
+          <Link to={"/horror"}>Horror</Link>
         </li>
         <li>
-          <a href="#header-body">Comedy</a>
+          <Link to={"/comedy"}>Comedy</Link>
         </li>
         <div className={open ? "subscribe-btn-open" : "subscribe-btn"}>
           <button>Subscribe</button>
+          <button className="login">Log In</button>
         </div>
       </ul>
 

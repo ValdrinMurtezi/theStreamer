@@ -30,9 +30,8 @@ section .crs-2 {
 section .crs-1 h1,
 section .crs-2 h1 {
   color: #f0f0f0;
-  margin: 1rem 0 0rem 5rem;
+  margin: 0rem 0 -1rem 4.5rem;
   font-size: 27px;
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 

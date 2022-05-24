@@ -142,30 +142,33 @@
   nav h1 {
     margin-left: 1rem;
   }
-  .movie {
-    img {
-      width: 100% !important;
-      height: 19rem !important;
-    }
-    .info {
-      width: 90% !important;
-      text-align: center;
-      margin-top: 0px !important;
 
-      h1 {
-        font-size: 30px;
+  .header-body {
+    .movie {
+      img {
+        width: 100% !important;
+        height: 19rem !important;
       }
-      p {
-        font-size: 17px;
-      }
+      .info {
+        width: 90% !important;
+        text-align: center;
+        margin-top: 0px !important;
 
-      .rating {
-        font-size: 17px;
-      }
-      button {
-        font-size: 18px;
-        padding: 0.6rem 0.5rem !important;
-        width: 9rem;
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 17px;
+        }
+
+        .rating {
+          font-size: 17px;
+        }
+        button {
+          font-size: 18px;
+          padding: 0.6rem 0.5rem !important;
+          width: 9rem;
+        }
       }
     }
   }

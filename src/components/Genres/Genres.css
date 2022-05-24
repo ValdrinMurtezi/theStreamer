@@ -1,0 +1,217 @@
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.action,
+.adventure,
+.horror,
+.comedy {
+  width: 100%;
+  height: 100%;
+  background-color: #0e0d0d;
+}
+
+.action,
+.adventure,
+.horror,
+.comedy {
+  padding-top: 6rem;
+  color: white;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.action .movie-container,
+.adventure .movie-container,
+.horror .movie-container,
+.comedy .movie-container {
+  width: 89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.action .movie,
+.adventure .movie,
+.horror .movie,
+.comedy .movie {
+  font-size: 9px;
+  margin: 1rem;
+  width: 250px;
+  cursor: pointer;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+}
+
+.action .movie:hover .overview,
+.adventure .movie:hover .overview,
+.horror .movie:hover .overview,
+.comedy .movie:hover .overview {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.action .movie img,
+.adventure .movie img,
+.horror .movie img,
+.comedy .movie img {
+  max-width: 100% !important;
+}
+
+.action .movie .movie-info,
+.adventure .movie .movie-info,
+.horror .movie .movie-info,
+.comedy .movie .movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem;
+}
+
+.action .movie .movie-info span,
+.adventure .movie .movie-info span,
+.horror .movie .movie-info span,
+.comedy .movie .movie-info span {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #012c01;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  color: gold;
+}
+
+.action .movie .movie-info h3,
+.adventure .movie .movie-info h3,
+.horror .movie .movie-info h3,
+.comedy .movie .movie-info h3 {
+  margin: 0;
+}
+
+.action .movie .overview,
+.adventure .movie .overview,
+.horror .movie .overview,
+.comedy .movie .overview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0f1e24;
+  padding: 7px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #ececec;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.action .movie .overview p,
+.adventure .movie .overview p,
+.horror .movie .overview p,
+.comedy .movie .overview p {
+  font-size: 16px;
+  color: gold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.action .movie .overview h2,
+.adventure .movie .overview h2,
+.horror .movie .overview h2,
+.comedy .movie .overview h2 {
+  font-size: 20px;
+  color: #e0dede;
+}
+
+@media screen and (max-width: 1200px) {
+  .action .movie-container,
+  .adventure .movie-container,
+  .horror .movie-container,
+  .comedy .movie-container {
+    width: 92%;
+  }
+  .action .movie-container .movie,
+  .adventure .movie-container .movie,
+  .horror .movie-container .movie,
+  .comedy .movie-container .movie {
+    margin: 1.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .action .movie-container,
+  .adventure .movie-container,
+  .horror .movie-container,
+  .comedy .movie-container {
+    width: 92%;
+  }
+  .action .movie-container .movie,
+  .adventure .movie-container .movie,
+  .horror .movie-container .movie,
+  .comedy .movie-container .movie {
+    width: 29% !important;
+  }
+  .action .movie-container .movie .overview,
+  .adventure .movie-container .movie .overview,
+  .horror .movie-container .movie .overview,
+  .comedy .movie-container .movie .overview {
+    overflow-y: scroll;
+    max-height: 100%;
+  }
+  .action .movie-container .movie .overview p,
+  .adventure .movie-container .movie .overview p,
+  .horror .movie-container .movie .overview p,
+  .comedy .movie-container .movie .overview p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .action .movie-container,
+  .adventure .movie-container,
+  .horror .movie-container,
+  .comedy .movie-container {
+    width: 92%;
+  }
+  .action .movie-container .movie,
+  .adventure .movie-container .movie,
+  .horror .movie-container .movie,
+  .comedy .movie-container .movie {
+    width: 45% !important;
+  }
+  .action .movie-container .movie h1,
+  .adventure .movie-container .movie h1,
+  .horror .movie-container .movie h1,
+  .comedy .movie-container .movie h1 {
+    font-size: 15px;
+  }
+  .action .movie-container .movie .overview p,
+  .adventure .movie-container .movie .overview p,
+  .horror .movie-container .movie .overview p,
+  .comedy .movie-container .movie .overview p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=Genres.css.map */

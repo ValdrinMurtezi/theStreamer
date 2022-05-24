@@ -22,6 +22,7 @@ nav {
 
 nav h1 {
   font-size: 35px;
+  margin-left: 1rem;
 }
 
 nav h1 a {
@@ -37,7 +38,7 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 58%;
+  width: 62%;
   list-style: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -74,7 +75,13 @@ nav .menu-btn {
   display: none;
 }
 
-nav .subscribe-btn button {
+nav .subscribe-btn-open .login {
+  background-color: transparent;
+  border: solid 1px white;
+}
+
+nav .subscribe-btn-open button {
+  margin: 0 0.5rem;
   color: white;
   background: #dd0101;
   padding: 0.5rem 1rem;
@@ -85,14 +92,41 @@ nav .subscribe-btn button {
   border-radius: 4px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-left: 6rem;
 }
 
-nav .subscribe-btn button:hover {
+nav .subscribe-btn-open button:hover {
   color: #2c2a2a;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+nav .subscribe-btn .login {
+  background-color: transparent;
+  border: solid 1px white;
+}
+
+nav .subscribe-btn button {
+  margin: 0 0.5rem;
+  color: white;
+  background: #dd0101;
+  padding: 0.5rem 1rem;
+  font-size: 17px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: solid 1px #dd0101;
+}
+
+nav .subscribe-btn button:hover {
+  color: white;
+  background-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: solid 1px white;
 }
 
 @media screen and (max-width: 850px) {
@@ -102,7 +136,7 @@ nav .subscribe-btn button:hover {
             justify-content: space-between !important;
   }
   nav h1 {
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
   nav .menu-btn {
     position: -webkit-sticky;
@@ -115,12 +149,6 @@ nav .subscribe-btn button:hover {
   .subscribe-btn button {
     display: none !important;
   }
-  .subscribe-btn-open {
-    display: inline;
-    z-index: 2;
-    right: 6%;
-    bottom: 75%;
-  }
   .subscribe-btn-open button {
     color: white;
     background: #dd0101;
@@ -132,6 +160,7 @@ nav .subscribe-btn button:hover {
     border-radius: 4px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    margin: 0 0.5rem;
   }
   .subscribe-btn-open button:hover {
     color: #2c2a2a;

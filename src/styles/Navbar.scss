@@ -13,6 +13,7 @@ nav {
   z-index: 10;
   h1 {
     font-size: 35px;
+    margin-left: 1rem;
     a {
       color: white;
       text-decoration: none;
@@ -24,7 +25,7 @@ nav {
 
   ul {
     display: flex;
-    width: 58%;
+    width: 62%;
     list-style: none;
     justify-content: space-around;
     animation: menuOpen 0.5s;
@@ -55,8 +56,13 @@ nav {
     display: none;
   }
 
-  .subscribe-btn {
+  .subscribe-btn-open {
+    .login {
+      background-color: transparent;
+      border: solid 1px white;
+    }
     button {
+      margin: 0 0.5rem;
       color: white;
       background: rgb(221, 1, 1);
       padding: 0.5rem 1rem;
@@ -66,12 +72,38 @@ nav {
       cursor: pointer;
       border-radius: 4px;
       transition: 0.5s;
-      margin-left: 6rem;
 
       &:hover {
         color: rgb(44, 42, 42);
         background-color: white;
         transition: 0.4s;
+      }
+    }
+  }
+
+  .subscribe-btn {
+    .login {
+      background-color: transparent;
+      border: solid 1px white;
+    }
+    button {
+      margin: 0 0.5rem;
+      color: white;
+      background: rgb(221, 1, 1);
+      padding: 0.5rem 1rem;
+      font-size: 17px;
+      border: none;
+      font-family: "Raleway", sans-serif;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: 0.5s;
+      border: solid 1px rgb(221, 1, 1);
+
+      &:hover {
+        color: white;
+        background-color: transparent;
+        transition: 0.4s;
+        border: solid 1px white;
       }
     }
   }
@@ -81,7 +113,7 @@ nav {
   nav {
     justify-content: space-between !important;
     h1 {
-      margin-left: 3rem;
+      margin-left: 2rem;
     }
     .menu-btn {
       position: sticky;
@@ -97,11 +129,6 @@ nav {
     }
   }
   .subscribe-btn-open {
-    display: inline;
-    z-index: 2;
-    // position: fixed;
-    right: 6%;
-    bottom: 75%;
     button {
       color: white;
       background: rgb(221, 1, 1);
@@ -112,6 +139,7 @@ nav {
       cursor: pointer;
       border-radius: 4px;
       transition: 0.5s;
+      margin: 0 0.5rem;
 
       &:hover {
         color: rgb(44, 42, 42);
