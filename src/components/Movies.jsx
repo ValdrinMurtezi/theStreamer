@@ -26,7 +26,7 @@ function Movies() {
 
   const popularMovies = async () => {
     const response = await fetch(
-      `${API_URL}/discover/movie?sort_by=popularity.desc&vote_average.gte=10&api_key=${APP_KEY}`
+      `${API_URL}/discover/movie?sort_by=popularity.desc&vote_average.gte=6&api_key=${APP_KEY}`
     );
     const data = await response.json();
     setNewMovies(data.results);

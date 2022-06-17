@@ -30,7 +30,7 @@ function Header() {
   let setSlide;
 
   const auto = () => {
-    setSlide = setInterval(nextSlide, 50000);
+    setSlide = setInterval(nextSlide, 5000);
   };
 
   useEffect(() => {
